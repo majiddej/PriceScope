@@ -21,8 +21,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app_bak.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app.py" />
+    <Compile Include="analysis\scenarios.py" />
+    <Compile Include="analysis\indicators.py" />
+    <Compile Include="analysis\data_fetcher.py" />
+    <Compile Include="config.py" />
     <Compile Include="gold_scenarios.py" />
     <Compile Include="PriceScope.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="analysis\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
